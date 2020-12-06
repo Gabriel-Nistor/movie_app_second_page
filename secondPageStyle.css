@@ -1,0 +1,126 @@
+body {
+    background-color: rgb(159, 193, 199);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(240, 240, 240);
+    margin: 0;
+    padding: 0;
+}
+
+nav button {
+    background: none;
+    border: none;
+    background-color: rgb(211, 211, 211);
+    float: left;
+    margin: 20px;
+}
+
+.btn_bookmark {
+    height: 40px;
+    width: 40px;
+}
+
+.btn_return {
+    color: white;
+    font-size: 1.8rem;
+}
+
+.movie_poster {
+    width: 320px;
+    height: 540px;
+    border: solid 1px black;
+    border-radius: 20px;
+    background-image: url(./img/joker-poster.jpg);
+    margin: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: 768px) {
+    .movie_poster {
+        width: 100%;
+        height: 540px;
+        margin: 0;
+        border-radius: 0 0 45px 45px;
+        border: none;
+        box-shadow: inset 70px 200px 100px rgba(0, 0, 0, .5);
+    }
+    .bottom_section {
+        width: 100%;
+        max-height: 350px;
+        position: fixed;
+        bottom: 0;
+        background-color: rgb(255, 255, 255);
+        z-index: 10;
+        border-radius: 45px 45px 0 0;
+        overflow: scroll;
+    }
+    .bottom_section__buy-ticket {
+        position: fixed;
+        bottom: 0;
+        height: 90px;
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        z-index: 20;
+        display: flex;
+        align-items: baseline;
+        justify-content: space-evenly;
+    }
+    .bottom_section p {
+        margin: 30px;
+        position: relative;
+        font-weight: 500;
+        margin-bottom: 160px;
+    }
+    .bottom_section p::after {
+        content: "";
+        position: fixed;
+        z-index: 1;
+        bottom: 90px;
+        left: 0;
+        pointer-events: none;
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 80%);
+        width: 100%;
+        height: 80px;
+    }
+    .bottom_section h1 {
+        margin: 30px 0 0 30px;
+    }
+    .btn_buy_ticket {
+        width: 200px;
+        height: 50px;
+        color: rgb(255, 255, 255);
+        background-color: rgb(0, 0, 0);
+        border: none;
+        border-radius: 20px;
+        font-size: 1rem;
+        font-weight: 600;
+        margin-top: 20px;
+        padding: 0;
+    }
+    .btn_buy_ticket:hover {
+        cursor: pointer;
+        background-color: rgb(128, 128, 128);
+        outline: none;
+        padding: 0;
+    }
+    .btn_buy_ticket:active {
+        outline: none;
+        background-color: rgb(65, 65, 65);
+        padding: 0;
+    }
+    .btn_buy_ticket:focus {
+        background-color: rgb(97, 97, 97);
+        outline: none;
+        padding: 0;
+    }
+    .rating {
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+    body {
+        background-color: rgb(185, 247, 160);
+    }
+}
